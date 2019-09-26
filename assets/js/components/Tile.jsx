@@ -22,7 +22,7 @@ export default class Tile extends React.Component {
         );
         const disabledTile = (
             <div className="disabled-tile">
-                <span className="tile-text">
+                <span className="tile-text-disabled">
                     {letter}
                 </span>
             </div>

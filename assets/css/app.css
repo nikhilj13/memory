@@ -59,12 +59,13 @@ hr {
 .disabled-tile {
     height: 5em;
     width: 5em;
-    background-color: #9B4DC9;
+    background-color: #7F7F7F;
     border-radius: 15px;
     border: 3px solid #2A2A2A;
     text-align: center;
     margin: 1em;
     transition: all .2s ease-in-out;
+    cursor: not-allowed !important;
 }
 
 .hidden-tile:hover {
@@ -77,6 +78,12 @@ hr {
     font-size: 3em;
     font-weight: bold;
     cursor: default;
+}
+
+.tile-text-disabled {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .purple-text {
