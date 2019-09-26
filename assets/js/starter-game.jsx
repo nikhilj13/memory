@@ -104,7 +104,7 @@ class Starter extends React.Component {
       return tileState.status === -1;
     });
     if (gameEnded) {
-      alert('Game has ended!');
+      alert('You won! You can play again by clicking on the Restart Game button.');
     }
   }
 
@@ -131,7 +131,7 @@ class Starter extends React.Component {
         this.setState({
           gameState: newGameState,
           clicks: clicks + 1,
-        });
+        }, this.hasGameEnded);
       } else { // if the letter doesn't match
         this.showTileBeforeHiding(currentTile.position);
         setTimeout(() => {
