@@ -3,32 +3,26 @@ import ReactDOM from 'react-dom';
 import Tile from './Tile';
 
 export default class TileGrid extends React.Component {
+    renderTileGrid() {
+        const { gameState, handleTileClick } = this.props;
+        let tileGrid = [];
+        let insertBreak = 3;
+        gameState.forEach((state, index) => {
+            tileGrid.push(<Tile key={index} tile={state} handleTileClick={handleTileClick} />);
+            if (index == insertBreak) {
+                tileGrid.push(<div key={`break-at-${insertBreak}`} className="grid-line-break" />);
+                insertBreak += 4;
+            }
+        });
+        return tileGrid;
+    }
+
     render() {
-        const tileGrid = (
+        return (
             <div className="grid">
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <div className="grid-line-break" />
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <div className="grid-line-break" />
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <div className="grid-line-break" />
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
-                <Tile letter='A'/>
+                {this.renderTileGrid()}
             </div>
         );
-        
-        return tileGrid;
     }
 }
 

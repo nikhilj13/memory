@@ -2,6 +2,16 @@
 
 @import "~milligram/dist/milligram";
 
+body {
+    background-color: #E9E9E9;
+}
+
+hr {
+    color: #2A2A2A;
+    border-color: #2A2A2A;
+    background-color: #2A2A2A;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +30,7 @@
     align-content: center;
 }
 
-.visible-card {
+.visible-tile {
     height: 5em;
     width: 5em;
     background-color: #9B4DC9;
@@ -31,11 +41,12 @@
     transition: all .2s ease-in-out;
 }
 
-.visible-card:hover {
+.visible-tile:hover {
     transform: scale(1.1);
+    box-shadow: 0 10px 8px -8px #2A2A2A;
 }
 
-.hidden-card {
+.hidden-tile {
     height: 5em;
     width: 5em;
     background-color: #2A2A2A;
@@ -45,14 +56,30 @@
     transition: all .2s ease-in-out;
 }
 
-.hidden-card:hover {
-    transform: scale(1.1);
+.disabled-tile {
+    height: 5em;
+    width: 5em;
+    background-color: #9B4DC9;
+    border-radius: 15px;
+    border: 3px solid #2A2A2A;
+    text-align: center;
+    margin: 1em;
+    transition: all .2s ease-in-out;
 }
 
-.card-text {
+.hidden-tile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 8px -8px #2A2A2A;
+}
+
+.tile-text {
     color: white;
     font-size: 3em;
     font-weight: bold;
     cursor: default;
+}
+
+.purple-text {
+    color: #9B4DC9;
 }
 
