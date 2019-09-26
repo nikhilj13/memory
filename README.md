@@ -1,5 +1,7 @@
 # Memory
 
+This game is deployed to [memory1.cs5610nikhil.website](http://memory1.cs5610nikhil.website/)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
