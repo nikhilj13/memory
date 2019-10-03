@@ -106,3 +106,7 @@ hr {
     margin-top: 10vh;
 }
 
+input[type="text"] {
+    background-color: white;
+}
+
