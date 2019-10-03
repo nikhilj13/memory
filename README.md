@@ -1,6 +1,6 @@
 # Memory
 
-This game is deployed to [memory1.cs5610nikhil.website](http://memory1.cs5610nikhil.website/)
+This game is deployed to [memory2.cs5610nikhil.website](http://memory2.cs5610nikhil.website/)
 
 To start your Phoenix server:
 

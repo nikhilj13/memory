@@ -1,0 +1,10 @@
+<div>
+	<div id="root">
+		React component loading...
+	</div>
+	<b>Channel: <%= @name %></b>
+</div>
+
+<script>
+	window.gameName = "games:<%= @name %>";
+</script>

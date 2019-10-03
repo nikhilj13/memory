@@ -12,17 +12,19 @@ https://github.com/nikhilj13/memory
 
 
 3. What's the URL that you deployed to?
-memory1.cs5610nikhil.website
+memory2.cs5610nikhil.website
 
 
 
-4. Is your game functionality complete? If not, what's missing?
-Yes, the game functionality is complete
+4. Is your game functionality complete, with the appropriate logic implemented
+as server-side elixir code? If not, what's missing?
+Yes, the game functionality is complete and is implemented on the server-side.
+
 
 
 
 5. Is your game properly deployed? If not, what went wrong?
-Yes, the game is properly deployed.
+Yes.
 
 
 

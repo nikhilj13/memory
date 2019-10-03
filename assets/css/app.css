@@ -90,3 +90,19 @@ hr {
     color: #9B4DC9;
 }
 
+.center-text {
+    text-align: center;
+}
+
+.channel-form {
+    display: flex;
+}
+
+.with-margin {
+    margin: 1em;
+}
+
+.top-margin {
+    margin-top: 10vh;
+}
+
